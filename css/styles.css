@@ -1,0 +1,221 @@
+/* 
+COLORS
+ФОН
+Фон шапкі #FFFFFF
+Основной фон светлый  #E5E5E5 
+Фон героя #2E2F42
+Фон секции НАША КОМАНДА #F4F4FD
+Фон футера #2E2F42
+
+Цвета шрифтов
+Цвет веб #4D5AE5
+Цвет студио #2E2F42
+
+Цвет шапки и заголовков #2E2F42
+Цвет основного текста абзацев #434455
+
+Цвет текста в футере #E7E9FC
+
+*/
+:root {
+  --main-background-color: #ffffff;
+  --our-team-background-color: #f4f4fd;
+  --hero-background-color: #2e2f42;
+  --footer-background-color: #2e2f42;
+  --logo-first-color: #4d5ae5;
+  --logo-footer-second-color: #f4f4fd;
+  --logo-second-color: #2e2f42;
+  --side-nav-color: #2e2f42;
+  --side-nav-active-color: #404bbf;
+  --contacts-color: #434455;
+  --contacts-active-color: #404bbf;
+  --hero-title-color: #ffffff;
+  --hero-button-background-color: #4d5ae5;
+  --hero-button-active-background-color: #404bbf;
+  --title-color: #2e2f42;
+  --main-color: #434455;
+  --footer-text-color: #e7e9fc;
+  --fiter-background-color: #e7e9fc;
+  --fiter-background-active-color: #404bbf;
+  --filter-color: #4d5ae5;
+  --filter-active-color: #ffffff;
+}
+
+.list {
+  list-style: none;
+}
+
+body {
+  background-color: var(--main-background-color);
+  color: var(--main-color);
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
+/* Логотип */
+.logo {
+  color: var(--logo-first-color);
+  text-decoration: none;
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.3;
+  text-transform: uppercase;
+}
+
+.logo-second-color {
+  color: var(--logo-second-color);
+}
+
+.logo-third-color {
+  color: var(--logo-footer-second-color);
+}
+
+/* Site-nav навигация */
+.site-nav a {
+  color: var(--side-nav-color);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.site-nav a:active {
+  color: var(--side-nav-active-color);
+}
+
+.site-nav a:hover {
+  color: var(--contacts-active-color);
+}
+
+.site-nav a:focus {
+  color: var(--contacts-active-color);
+}
+
+.contacts a {
+  color: var(--contacts-color);
+  text-decoration: none
+  font-style: normal;
+}
+.contacts a:hover {
+  color: var(--contacts-active-color);
+}
+
+.contacts a:focus {
+  color: var(--contacts-active-color);
+}
+/* Герой */
+.hero {
+  background-color: var(--hero-background-color);
+}
+.hero-title {
+  color: var(--hero-title-color);
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 1.07;
+  text-align: center;
+  letter-spacing: 0.02em;
+}
+.hero-button {
+  background-color: var(--hero-button-background-color);
+  color: var(--hero-title-color);
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+}
+.hero-button:hover {
+  background-color: var(--hero-button-active-background-color);
+}
+
+.hero-button:focus {
+  background-color: var(--hero-button-active-background-color);
+}
+/* Преымущества */
+
+/* стиль для H3 */
+.item-title {
+  color: var(--title-color);
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+}
+/* стиль для p */
+.section-item a {
+  color: var(--main-color);
+}
+/* Что мы делаем секция */
+
+/* стиль для H2 */
+.section-title {
+  color: var(--title-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.1;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+}
+
+/* Наша команда секция */
+.team-section {
+  background-color: var(--our-team-background-color);
+}
+
+/* ФУТЕР */
+.page-footer {
+  background-color: var(--footer-background-color);
+  color: var(--footer-text-color);
+}
+
+/* Страница ПОРТФОЛИО + унаследование своqств цвета для p которые лежат в ссылках s*/
+.list a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Фильтры для портфолио */
+/* КНОПКИ*/
+
+.filter-button {
+  background-color: var(--fiter-background-color);
+  color: var(--filter-color);
+  cursor: pointer;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  /* identical to box height, or 150% */
+  letter-spacing: 0.04em;
+}
+
+.filter-button:hover {
+  background-color: var(--fiter-background-active-color);
+  color: var(--filter-active-color);
+}
+
+.filter-button:focus {
+  background-color: var(--fiter-background-active-color);
+  color: var(--filter-active-color);
+}
+
+/* Скрытые заголовки */
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
