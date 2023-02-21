@@ -41,6 +41,22 @@ COLORS
   --filter-active-color: #ffffff;
 }
 
+h1, h2, h3, h4, p {
+
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul, ol{
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+img{
+  display: block;
+}
+
 .list {
   list-style: none;
 }
@@ -53,9 +69,31 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
 }
+/* ======================КОНТЕЙНЕР ОБЩИЙ============================ */
+.container {
+  width: 1158px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* ======================HEADER============================ */
+
+.page-header{
+padding-top: 24px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #E7E9FC;
+}
+.page-header-container{
+  display: flex;
+  align-items: center;
+}
 
 /* Логотип */
 .logo {
+margin-right: 76px;
+
   color: var(--logo-first-color);
   text-decoration: none;
   font-family: "Raleway", sans-serif;
@@ -73,8 +111,21 @@ body {
   color: var(--logo-footer-second-color);
 }
 
-/* Site-nav навигация */
+/* ============================Site-nav навигация======================*/
+.page-nav{
+  display: flex;
+  align-items: center;
+}
+.site-nav{
+  display: flex;
+}
+
+.site-nav-item:not(:last-child){
+margin-right: 40px;
+
+}
 .site-nav a {
+
   color: var(--side-nav-color);
   text-decoration: none;
   font-weight: 500;
@@ -94,7 +145,23 @@ body {
   color: var(--contacts-active-color);
 }
 
+.page-address{
+  margin-left: auto;
+}
+.contacts{
+  display: flex;
+  align-items: center;
+}
+
+.contacts-item:not(:last-child){
+  margin-right: 40px;
+}
+
+}
+
 .contacts a {
+
+
   color: var(--contacts-color);
   text-decoration: none
   font-style: normal;
@@ -106,6 +173,11 @@ body {
 .contacts a:focus {
   color: var(--contacts-active-color);
 }
+
+/* ======================/ HEADER============================ */
+
+
+
 /* Герой */
 .hero {
   background-color: var(--hero-background-color);
@@ -119,6 +191,10 @@ body {
   letter-spacing: 0.02em;
 }
 .hero-button {
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+border-radius: 4px;
+padding: 16px 32px;
+
   background-color: var(--hero-button-background-color);
   color: var(--hero-title-color);
   font-family: inherit;
