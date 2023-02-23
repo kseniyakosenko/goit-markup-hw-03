@@ -179,7 +179,7 @@ margin-right: 40px;
 
 
 
-/* Герой */
+/*============================ Герой =========================*/
 .hero {
   padding-top: 188px;
   padding-bottom: 188px;
@@ -258,8 +258,7 @@ padding: 16px 32px;
 }
 
 .container-work{
-  margin-top: 120px;
-  margin-bottom: 120px;
+  padding-bottom: 120px;
 }
 
 /* стиль для H2 */
@@ -324,13 +323,6 @@ margin-bottom: 72px;
 }
 
 
-
-
-
-
-
-
-
 /* Страница ПОРТФОЛИО + унаследование своqств цвета для p которые лежат в ссылках s*/
 .list a {
   text-decoration: none;
@@ -340,7 +332,51 @@ margin-bottom: 72px;
 /* Фильтры для портфолио */
 /* КНОПКИ*/
 
+.filter-button-list{
+  display: flex;
+  justify-content: center;
+}
+
+.list-cards{
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 48px;
+  column-gap: 24px;
+}
+
+
+.portfolio-item-border{
+    flex-basis: calc(100%-48px)/3;
+  border-bottom: 1px solid var(--fiter-background-color);
+  border-left: 1px solid var(--fiter-background-color);
+  border-right: 1px solid var(--fiter-background-color);
+  padding-bottom: 32px;
+padding-left: 16px;
+}
+
+.portfoilio-section-title{
+  padding-top: 32px;
+  margin-bottom: 8px;
+}
+
+
+.container-buttons{
+  margin-bottom: 72px;
+}
+
+.container-filter{
+  padding-top: 96px;
+  padding-bottom: 120px;
+}
+
+.filter-button-item:not(:last-child){
+    margin-right: 24px;
+}
+
 .filter-button {
+  padding: 12px 24px;
+  border: 1px solid var(--fiter-background-color);
+border-radius: 4px;
   background-color: var(--fiter-background-color);
   color: var(--filter-color);
   cursor: pointer;
@@ -361,6 +397,7 @@ margin-bottom: 72px;
   background-color: var(--fiter-background-active-color);
   color: var(--filter-active-color);
 }
+
 
 /* Скрытые заголовки */
 
