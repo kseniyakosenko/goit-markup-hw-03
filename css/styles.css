@@ -55,6 +55,7 @@ ul, ol{
 
 img{
   display: block;
+  max-width: 100%;
 }
 
 .list {
@@ -83,7 +84,7 @@ body {
 .page-header{
 padding-top: 24px;
   padding-bottom: 24px;
-  border-bottom: 1px solid #E7E9FC;
+  border-bottom: 1px solid var(--fiter-background-color);
 }
 .page-header-container{
   display: flex;
@@ -201,7 +202,7 @@ margin-right: auto;
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 border-radius: 4px;
 padding: 16px 32px;
-
+border: none;
   background-color: var(--hero-button-background-color);
   color: var(--hero-title-color);
   font-family: inherit;
@@ -277,6 +278,7 @@ margin-bottom: 72px;
 /* ==============================Наша команда секция======================= */
 .team-section {
   background-color: var(--our-team-background-color);
+  
 }
 
 .item-title-team{
@@ -286,6 +288,7 @@ margin-bottom: 72px;
 
 .team-list{
   display: flex;
+  flex-basis: calc(100% - 72px / 4);
 }
 
 .team-list-item:not(:last-child){
@@ -298,9 +301,8 @@ margin-bottom: 72px;
 }
 
 .team-list-item{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+
+  text-align: center;
   padding-bottom: 32px;
   background-color: var(--main-background-color);
 }
@@ -313,12 +315,13 @@ margin-bottom: 72px;
 }
 
 .container-footer{
-  padding-right: 1020px;
+
   padding-top: 100px;
   padding-bottom: 100px;
 }
 
 .footer-item{
+  margin-top: 16px;
   width: 264px;
 }
 
@@ -344,18 +347,20 @@ margin-bottom: 72px;
   column-gap: 24px;
 }
 
+.portfolio-item-card{
+  flex-basis: calc(100% / 3 - 24px);
+}
 
 .portfolio-item-border{
-    flex-basis: calc(100%-48px)/3;
   border-bottom: 1px solid var(--fiter-background-color);
   border-left: 1px solid var(--fiter-background-color);
   border-right: 1px solid var(--fiter-background-color);
+  padding-top: 32px;
   padding-bottom: 32px;
 padding-left: 16px;
 }
 
 .portfoilio-section-title{
-  padding-top: 32px;
   margin-bottom: 8px;
 }
 
